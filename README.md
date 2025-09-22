@@ -48,3 +48,4 @@ docker run -p 5000:5000 insurance-claims-app
 
 Open your browser and visit:
 👉 http://localhost:5000
+<img width="1912" height="995" alt="image" src="https://github.com/user-attachments/assets/78db935b-3815-489c-a3d9-72694801226c" />
