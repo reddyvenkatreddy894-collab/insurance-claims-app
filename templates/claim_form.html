@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submit a Claim</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="sidebar">
+<h2>Insurance Claims</h2>
+<a href="/">Dashboard</a>
+<a href="/new-claim" class="active">New Claim</a>
+<a href="#">Claims</a>
+<a href="#">Reports</a>
+</div>
+ 
+    <div class="content">
+<h2>Submit a Claim</h2>
+<form action="/submit" method="POST">
+<label>Policy Number:</label>
+<input type="text" name="policy" required><br><br>
+ 
+            <label>Type of Claim:</label>
+<select name="claim_type" required>
+<option>Health</option>
+<option>Vehicle</option>
+<option>Property</option>
+<option>Other</option>
+</select><br><br>
+ 
+            <label>Claim Amount:</label>
+<input type="number" name="amount" required><br><br>
+ 
+            <label>Description:</label>
+<textarea name="description" rows="3"></textarea><br><br>
+ 
+            <button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+ 
